@@ -21,7 +21,7 @@ class Gust_Options_Data {
 			'option_name'       => 'gust_options',
 			'plugin_path'       => 'gust_options',
 			'defaults'          => array(
-				'main_endpoint'     => 'gust',
+				'main_endpoint'     => 'md',
 				'main_posttypes'	  => array(
 					'post' => true,
 					'page' => true
