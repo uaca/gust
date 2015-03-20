@@ -13,9 +13,9 @@ class Gust_Options_Data {
 	}
 	public static function get() {
 		return array(
-			'page_title'        => __( 'Gust Options', 'gust' ),
+			'page_title'        => __( 'Markdown Options', 'md' ),
 			'page_description'  => false,
-			'menu_title'        => __( 'Gust', 'gust' ),
+			'menu_title'        => __( 'Markdown', 'markdown' ),
 			'permission'        => 'manage_options',
 			'menu_slug'         => 'gust_options',
 			'option_name'       => 'gust_options',
@@ -31,21 +31,21 @@ class Gust_Options_Data {
 			'section'           => array(
 				array(
 					'slug'  => 'main',
-					'title' => __( 'Main Settings', 'gust' ),
+					'title' => __( 'Main Settings', 'markdown' ),
 					'field' => array(
 						array(
 							'slug'        => 'endpoint',
-							'title'       => __( 'URL endpoint', 'gust' ),
+							'title'       => __( 'URL endpoint', 'md' ),
 							'type'        => 'text'
 						),
 						array(
 							'slug'        => 'dateformat',
-							'title'       => __( 'Date format', 'gust' ),
+							'title'       => __( 'Date format', 'md' ),
 							'type'        => 'text'
 						),
 						array(
 							'slug'    => 'posttypes',
-							'title'   => __( 'Use Gust for', 'gust' ),
+							'title'   => __( 'Use Markdown for', 'md' ),
 							'type'    => 'checkbox_list',
 							'options' => array(
 								'list' => self::list_post_types()
