@@ -8,7 +8,8 @@ class Gust {
     require_once self::$includes_dir . 'gust-options.php';
     $gust_settings = new Gust_Options( Gust_Options_Data::get() );
     self::$options   = $gust_settings->get();
-    define ('GUST_NAME',          self::$options['main_endpoint']);
+    // define ('GUST_NAME',          self::$options['main_endpoint']);
+    define ('GUST_NAME',          "md");
     define ('GUST_ROOT',          GUST_SUBPATH.'/'.GUST_NAME);
     define ('GUST_API_ROOT',      '/api/'.GUST_NAME);
   }
